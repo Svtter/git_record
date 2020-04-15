@@ -17,3 +17,5 @@ gh = GitHandle()
 gh.create_new_branch()
 
 ```
+
+This scripts will create a branch named `current date`.

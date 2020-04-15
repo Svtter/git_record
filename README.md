@@ -11,7 +11,7 @@ Use git branch to record temporal result.
 ## Call
 
 ``` python
-from git_record.git_record import GitHandler
+from git_record.git_record import GitHandle
 
 gh = GitHandle()
 gh.create_new_branch()

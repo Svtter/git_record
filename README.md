@@ -1,6 +1,6 @@
 # Git record
 
-Use git branch to record temporal result.
+Use git branch to record temporal code.
 
 
 ## Install

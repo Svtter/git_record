@@ -8,7 +8,7 @@ Use git branch to record temporal result.
 `python setup.py install` or `pip install -e .`
 
 
-## Call
+## Usage
 
 ``` python
 from git_record.git_record import GitHandle
@@ -19,3 +19,10 @@ gh.create_new_branch()
 ```
 
 This scripts will create a branch named `current date`.
+
+
+## ..MORE?
+
+1. Folk this repo.
+2. `pip install -e .`
+3. run `python example/ex1.py`

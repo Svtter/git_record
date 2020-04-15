@@ -4,6 +4,6 @@ __pycache__
 
 *.pyc
 
-*.egg_info
+*.egg-info
 
 .vscode

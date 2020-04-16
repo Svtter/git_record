@@ -22,7 +22,7 @@ class GitHandle:
         assert not self.repo.is_dirty()
         branch_name = arrow.now().format('YYYY-MM-DD-HH-mm-ss')
         os.system(f'git checkout -b "{branch_name}"')
-        os.system(f'git push {remote_name} {branch_name}')
+        os.system(f'git push {self.remote_name} {branch_name}')
         os.system(f'git checkout master')
 
 

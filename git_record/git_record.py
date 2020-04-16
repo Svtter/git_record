@@ -5,9 +5,10 @@ from git import Repo
 
 class GitHandle:
 
-    def __init__(self):
+    def __init__(self, remote_name='origin'):
         git_repo_dir = os.getcwd()
         self.repo = Repo(git_repo_dir)
+        self.remote_name = remote_name
         assert not self.repo.bare
 
     def commit(self):
@@ -21,7 +22,7 @@ class GitHandle:
         assert not self.repo.is_dirty()
         branch_name = arrow.now().format('YYYY-MM-DD-HH-mm-ss')
         os.system(f'git checkout -b "{branch_name}"')
-        os.system(f'git push origin {branch_name}')
+        os.system(f'git push {remote_name} {branch_name}')
         os.system(f'git checkout master')
 
 

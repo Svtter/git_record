@@ -17,7 +17,7 @@ dev_requires = [
 
 setuptools.setup(
     name='git_record_svtter',
-    version="0.0.1",
+    version="0.0.2",
     author="svtter",
     author_email="svtter@qq.com",
     description="A tools to record temporal code",

@@ -5,7 +5,7 @@ Use git branch to record temporal code.
 
 ## Install
 
-`python setup.py install` or `pip install -e .`
+`pip install git-record-svtter`
 
 
 ## Usage

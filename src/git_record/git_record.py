@@ -22,7 +22,7 @@ class GitHandle:
         branch_name = arrow.now().format("YYYY-MM-DD-HH-mm-ss")
         os.system(f'git checkout -b "{branch_name}"')
         os.system(f"git push {self.remote_name} {branch_name}")
-        os.system(f"git checkout master")
+        os.system("git checkout master")
 
 
 if __name__ == "__main__":

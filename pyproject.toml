@@ -1,0 +1,38 @@
+[project]
+name = "git_record_svtter"
+version = "0.0.2"
+description = "A tools to record temporal code"
+authors = [
+    {name = "svtter", email = "svtter@qq.com"},
+]
+dependencies = [
+    "arrow",
+    "gitpython>=3.1.43",
+]
+requires-python = ">=3.9,<3.11"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/Svtter/git_record"
+
+[project.entry-points."git_record.main"]
+main = "git_record.main"
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "autopep8>=2.2.0",
+    "jedi>=0.19.1",
+    "pytest>=8.2.2",
+    "pynvim>=0.5.0",
+    "invoke>=2.2.0",
+]
